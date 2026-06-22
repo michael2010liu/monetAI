@@ -15,6 +15,21 @@ npm start
 
 Get an API key at https://console.anthropic.com (Settings → API Keys). Each question costs a fraction of a cent with the default model.
 
+### Testing with a shared key (for collaborators)
+
+If someone has sent you a key to test with (rather than getting your own):
+
+```bash
+git clone https://github.com/michael2010liu/monet.git
+cd monet
+npm install
+cp .env.example .env
+```
+
+Then open `.env` and paste the key after `ANTHROPIC_API_KEY=` (replace the `sk-ant-...` placeholder), save, and run `npm start`.
+
+The key should reach you privately — a password manager or a secure message, never committed to the repo or posted in chat. `.env` is gitignored, so your key stays on your machine and is never pushed.
+
 ## Using it
 
 - **Cmd/Ctrl + Shift + Space** — show/hide the widget from anywhere
