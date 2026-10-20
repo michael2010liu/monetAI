@@ -1,4 +1,4 @@
-# Glance
+# Monet
 
 A tiny always-on-top widget that can see your screen. Hit a hotkey, type a question ("what does this error mean?", "summarize the section I'm reading"), and it screenshots your screen for you and answers — no manual screenshotting.
 
@@ -12,8 +12,12 @@ npm install
 cp .env.example .env     # then paste your Anthropic API key into .env
 npm start
 ```
+## IMPORTANT: YOU MUST CREATE A FILE CALLED .env IN ORDER TO PASTE YOUR ANTHROPIC KEY IN. YOUR ANTHROPIC KEY IS CONFIDENTIAL AND SHOULD NOT BE SHARED WITH OTHERS.
 
-Get an API key at https://console.anthropic.com (Settings → API Keys). Each question costs a fraction of a cent with the default model.
+1. Get an API key at https://console.anthropic.com (Settings → API Keys). Each question costs a fraction of a cent with the default model.
+2. Create a new file called .env
+3. Write this line: ANTHROPIC_API_KEY=(insert key here, no spaces)
+4. You're good to go!
 
 ### Testing with a shared key (for collaborators)
 
